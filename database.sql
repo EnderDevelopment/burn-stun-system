@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS burnstun_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_id INT NOT NULL,
+    target_id INT NOT NULL,
+    action VARCHAR(10) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
